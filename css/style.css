@@ -1,0 +1,106 @@
+body, * {
+	font-family: Arial;
+	font-size: 14px;
+}
+
+body {
+	padding: 0px;
+	margin: 0px;
+}
+
+/* add a little margin on the sides from smaller screens */
+@media (max-width: 700px) {
+	body {
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+}
+
+.clear {
+	clear: both;
+}
+
+h1#logo {
+	width: 100%;
+	background-color: #2980B9;
+	color: white;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 20px;
+	margin-top: 0px;
+	text-align: center;
+}
+
+#container {
+	width: 100%;
+	background-color: rgba(255,255,255,.5);
+}
+
+/* center notes on bigger screens */
+@media (min-width: 700px) {
+	#container {
+		width: 700px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+#menu {
+	margin-bottom: 10px;
+}
+
+#menu a {
+	float: left;
+	width: 200px;
+	/*margin-right: 10px;*/
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: #2980B9;
+	color: #FFF;
+	text-align: center;
+	text-decoration: none;
+	width: 50%;
+}
+
+#menu a.new {
+	background-color: #27AE60;
+}
+
+#menu a.tags {
+	background-color: #D35400;
+}
+
+#notes {
+	clear: both;
+}
+
+#notes div {
+	background-color: #EEE;
+	margin-bottom: 10px;
+	padding: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	line-height: 1.5em;
+}
+
+#notes div .toolbar {
+	float: right;
+	padding-top: 5px;
+}
+
+#notes div h1 {
+	font-size: 20px;
+}
+
+#notes div p, #notes div ul, #notes div h1, #notes div h2, #notes div h3, #notes div a {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#new-note textarea {
+	width: 100%;
+	height: 300px;
+	background-color: #EEE;
+	border: 0px;
+	padding: 10px;
+}
